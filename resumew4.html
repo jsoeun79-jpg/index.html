@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soeun Jeong - Resume</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.55;
+      padding: 32px 16px;
+    }
+
+    .resume {
+      max-width: 980px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(229, 231, 235, 0.9);
+    }
+
+    .topbar {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 45%, #60a5fa 100%);
+      color: white;
+      padding: 42px 40px 34px;
+      position: relative;
+    }
+
+    .photo {
+      position: absolute;
+      top: 32px;
+      right: 40px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      border: 2px dashed rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .role {
+      margin: 8px 0 18px;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-size: 0.95rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+    }
+
+    .sidebar {
+      background: #fbfdff;
+      border-right: 1px solid var(--line);
+      padding: 32px 28px;
+    }
+
+    .main { padding: 32px 34px; }
+
+    .section { margin-bottom: 28px; }
+
+    .section-title {
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .item { margin-bottom: 18px; }
+
+    .item-title { font-weight: 800; }
+
+    ul { margin-left: 18px; }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+
+    .contact span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .contact span::after {
+      content: "•";
+      margin: 0 8px;
+      opacity: 0.6;
+    }
+
+    .contact span:last-child::after {
+      content: "";
+      margin: 0;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header class="topbar">
+      <div class="photo">
+        <img src="image.jpg" alt="Profile Photo" />
+      </div>
+      <h1 class="name">Soeun Jeong</h1>
+      <p class="role">Asia University Student | Business & Marketing</p>
+      <div class="contact">
+        <span>114035195</span>
+        <span>Korean</span>
+        <span>Taichung City, Taiwan</span>
+        <span>sec2.asia.edu.tw</span>
+        <span>+886 4 2332 3456</span>
+      </div>
+      
+    </header>
+
+    <div class="content">
+      <aside class="sidebar">
+        <section class="section">
+          <div class="section-title">Education</div>
+          <div class="item">
+            <div class="item-title">Asia University</div>
+            <div>Bachelor's Degree (Expected Graduation: 2026)</div>
+            <div style="margin-top:8px; font-size:0.9rem; color:#374151;">
+              <strong>Relevant Coursework:</strong><br/>
+              W4 Assignment<br/>
+              Course: 資訊與科技1T<br/>
+              Course Code: 1142GRGRG000931T
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-title">Profile</div>
+          <div>Motivated university student at Asia University with a strong interest in marketing, business strategy, and creative design. Eager to gain hands-on experience through internships and collaborative projects.</div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <div class="tag">Korean (Native)</div>
+            <div class="tag">English (Intermediate)</div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="section">
+          <div class="section-title">Academic Background</div>
+
+          <div class="item">
+            <div class="item-title">Asia University</div>
+            <div>Bachelor's Degree (Expected Graduation: 2026)</div>
+            <ul>
+              <li>Focused on business fundamentals, marketing concepts, and digital tools</li>
+              <li>Completed coursework in information technology and basic data handling</li>
+              <li>Developed presentation and communication skills through class assignments</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Seorak High School</div>
+            <ul>
+              <li>Completed general academic curriculum with emphasis on communication and social studies</li>
+              <li>Actively participated in group projects and school activities</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Seorak Middle School</div>
+            <ul>
+              <li>Built foundational academic skills and teamwork through classroom collaboration</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Bangil Elementary School</div>
+            <ul>
+              <li>Developed early academic discipline and communication skills</li>
+            </ul>
+          </div>
+
+        </section>
+      </main>
+    </div>
+
+    
+  </div>
+
+  <script>
+    console.log('Resume loaded');
+  </script>
+</body>
+</html>
