@@ -1,0 +1,249 @@
+좋아 👍 아래에 네 이메일(qazwsxc66231@naver.com) 추가해서 바로 복붙 가능한 전체 코드로 만들어줬어.
+👉 나는 contact 부분에 “이메일” 항목을 추가했고, 클릭하면 메일 보내기 열리게 mailto:도 넣어줬어.
+✅ 수정 완료 전체 코드 (복붙용)
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soeun Jeong - Resume</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.55;
+      padding: 32px 16px;
+    }
+
+    .music-player {
+      max-width: 980px;
+      margin: 0 auto 15px auto;
+      text-align: right;
+    }
+
+    audio {
+      height: 35px;
+      opacity: 0.8;
+    }
+
+    .resume {
+      max-width: 980px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(229, 231, 235, 0.9);
+    }
+
+    .topbar {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 45%, #60a5fa 100%);
+      color: white;
+      padding: 42px 40px 34px;
+      position: relative;
+    }
+
+    .photo {
+      position: absolute;
+      top: 32px;
+      right: 40px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      border: 2px dashed rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .role {
+      margin: 8px 0 18px;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-size: 0.95rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+    }
+
+    .sidebar {
+      background: #fbfdff;
+      border-right: 1px solid var(--line);
+      padding: 32px 28px;
+    }
+
+    .main { padding: 32px 34px; }
+
+    .section { margin-bottom: 28px; }
+
+    .section-title {
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .item { margin-bottom: 18px; }
+
+    .item-title { font-weight: 800; }
+
+    ul { margin-left: 18px; }
+
+    .contact span::after {
+      content: "•";
+      margin: 0 8px;
+      opacity: 0.6;
+    }
+
+    .contact span:last-child::after {
+      content: "";
+    }
+
+    @media (max-width: 768px) {
+      .content { grid-template-columns: 1fr; }
+      .sidebar { border-right: none; border-bottom: 1px solid var(--line); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="music-player">
+    <audio controls autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="resume">
+    <header class="topbar">
+      <div class="photo">
+        <img src="image.jpg" alt="Profile Photo" />
+      </div>
+
+      <h1 class="name">Soeun Jeong</h1>
+      <p class="role">Asia University Student | Business & Marketing</p>
+
+      <div class="contact">
+        <span>114035195</span>
+        <span>Korean</span>
+        <span>Taichung City, Taiwan</span>
+        <span>sec2.asia.edu.tw</span>
+        <span>+886 4 2332 3456</span>
+        <span>
+          <a href="mailto:qazwsxc66231@naver.com" style="color:white; text-decoration:none;">
+            qazwsxc66231@naver.com
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <div class="content">
+      <aside class="sidebar">
+
+        <section class="section">
+          <div class="section-title">Education</div>
+          <div class="item">
+            <div class="item-title">Asia University</div>
+            <div>Bachelor's Degree (Expected Graduation: 2026)</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Profile</div>
+          <div>
+            Motivated university student at Asia University with interest in marketing and business.
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <div class="tag">Korean (Native)</div>
+            <div class="tag">English (Intermediate)</div>
+          </div>
+        </section>
+
+      </aside>
+
+      <main class="main">
+
+        <section class="section">
+          <div class="section-title">Academic Background</div>
+
+          <div class="item">
+            <div class="item-title">Asia University</div>
+            <ul>
+              <li>Business fundamentals & marketing concepts</li>
+              <li>Information technology coursework</li>
+            </ul>
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
+원하면 내가 다음도 해줄게 👍
+💼 “진짜 취업용 느낌 더 강하게” 수정
+🎨 디자인 더 고급스럽게 (애플 스타일)
+🌙 다크모드 추가
+📱 모바일 완벽 최적화
+말해줘 😆
