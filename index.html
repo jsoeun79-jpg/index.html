@@ -59,11 +59,18 @@
       font-size: 12px;
     }
 
-    /* 사진 자리를 모바일에서 숨기거나 조정 */
+    /* 사진 모바일 대응 - 숨기지 않고 크기 조정 */
     @media (max-width: 600px) {
-      .photo { display: none; }
+      .photo {
+        top: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        font-size: 10px;
+      }
       .name { font-size: 1.8rem !important; }
-      .topbar { padding: 30px 20px; }
+      .topbar { padding: 30px 20px 20px; }
+      .contact { flex-direction: column; gap: 4px; }
     }
 
     .name {
@@ -155,7 +162,7 @@
             <div class="item-title">Asia University</div>
             <div style="font-size:0.9rem;">Bachelor's Degree (Expected 2026)</div>
             <div style="margin-top:8px; font-size:0.85rem; color:#374151;">
-              <strong>Course:</strong> 資訊與科技1T<br/>
+              <strong>Course:</strong> 資訊와 科技1T<br/>
               <strong>Code:</strong> 1142GRGRG000931T
             </div>
           </div>
